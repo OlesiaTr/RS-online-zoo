@@ -1,4 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+body {
+  font-family: Roboto, sans-serif;
+  background-color: var(--red);
+}
+
+.hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
 :root {
   --green: #4b9200;
   --orange: #f9804b;
@@ -47,9 +90,4 @@
       #eaf7fe 127.9%,
       #eaf7fe 149.54%
     );
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: var(--gradient-orange);
 }/*# sourceMappingURL=main.css.map */
