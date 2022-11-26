@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 :root {
+  // Colors
   --green: #4b9200;
   --orange: #f9804b;
   --yellow: #ffee2e;
@@ -9,6 +9,7 @@
   --grey: #ababab;
   --light-grey: #f1f3f2;
   --white: rgba(253, 253, 255, 0.52);
+  //   Gradients
   --gradient-orange: linear-gradient(
       315.75deg,
       rgba(254, 210, 144, 0.7) 30.06%,
@@ -48,8 +49,3 @@
       #eaf7fe 149.54%
     );
 }
-
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: var(--gradient-orange);
-}/*# sourceMappingURL=main.css.map */
