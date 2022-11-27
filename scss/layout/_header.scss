@@ -1,0 +1,58 @@
+.header {
+  background-color: var(--bcg-black);
+  @include centeredFlex($ai: null);
+
+  & .container {
+    @media screen and (max-width: 1200px) {
+      @include centeredFlex($jc: null);
+    }
+
+    @include desktop {
+      @include centeredFlex($jc: null);
+    }
+  }
+}
+
+.nav {
+  margin-left: 63px;
+  display: none;
+
+  @include small-desktop {
+    display: block;
+  }
+}
+.nav__list {
+  display: flex;
+  gap: 48px;
+
+  @include desktop {
+    gap: 58px;
+  }
+}
+
+.nav__item,
+.designer-link {
+  @include font(500, 16px, 1.4);
+  color: var(--bcg-white);
+  transition: all var(--time) var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--orange);
+    cursor: pointer;
+  }
+}
+.nav__link {
+  color: inherit;
+}
+.active {
+  color: var(--orange);
+}
+.designer-link {
+  margin-left: auto;
+  display: none;
+
+  @include small-desktop {
+    display: block;
+  }
+}

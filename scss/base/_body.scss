@@ -1,9 +1,8 @@
 body {
   font-family: Roboto, sans-serif;
 
-  //   font-size: 14px;
-  //   letter-spacing: 0.03em;
+  @include font(400, 16px, 1.2);
 
-  background-color: var(--red);
-  //   color: $primary-text-color;
+  background-color: var(--bcg-white);
+  color: var(--dark-blue);
 }

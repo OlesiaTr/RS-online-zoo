@@ -1,0 +1,76 @@
+.logo {
+  width: 47px;
+  height: 29px;
+
+  text-align: center;
+
+  border-radius: 2px;
+
+  &.mob-menu__logo {
+    width: 66px;
+    height: 42px;
+
+    border: 0.8px solid var(--orange);
+    margin-bottom: 30px;
+  }
+
+  @include small-desktop {
+    width: 82px;
+    height: 52px;
+    border: 1px solid var(--bcg-white);
+  }
+}
+
+.logo__title {
+  @include font(400, 12px, 1.2);
+  padding: 2px;
+  height: 42px;
+
+  color: var(--bcg-white);
+
+  @include small-desktop {
+    @include font(400, 19px, 1.2);
+  }
+
+  &.mob-menu__logo-title {
+    @include font(400, 15px, 1.2);
+    color: var(--orange);
+  }
+
+  &::after {
+    content: url(../../imgs/svg/white-bamboo.svg);
+    position: relative;
+
+    width: 5px;
+    height: 14px;
+
+    right: 16px;
+    top: -17px;
+
+    @include small-desktop {
+      width: 7px;
+      height: 21px;
+
+      right: 23px;
+      top: -23px;
+    }
+
+    .mob-menu & {
+      content: url(../../imgs/svg/orange-bamboo.svg);
+
+      width: 6px;
+      height: 17px;
+
+      right: 20px;
+      top: -20px;
+    }
+  }
+}
+
+.logo__title--span {
+  padding: 5px;
+
+  @include small-desktop {
+    padding: 6px;
+  }
+}
