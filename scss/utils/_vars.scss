@@ -9,6 +9,12 @@
   --grey: #ababab;
   --light-grey: #f1f3f2;
   --white: rgba(253, 253, 255, 0.52);
+  // Background
+  --bcg-white: #ffffff;
+  --bcg-black: #111115;
+  // Transition
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --time: 250ms;
   //   Gradients
   --gradient-orange: linear-gradient(
       315.75deg,
