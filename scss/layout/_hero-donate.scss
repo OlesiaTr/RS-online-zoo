@@ -1,5 +1,5 @@
 .hero--donate {
-  background-image: url(../../imgs/hero/panda-donate-mob-x1.png);
+  background-image: url(./../../imgs/hero/panda-donate-mob-x1.png);
 
   background-repeat: no-repeat;
   background-position: center;
@@ -8,34 +8,34 @@
   height: 187px;
 
   @include retina {
-    background-image: url(../../imgs/hero/panda-donate-mob-x2.png);
+    background-image: url(./../../imgs/hero/panda-donate-mob-x2.png);
   }
 
   @include tablet {
     height: 335px;
 
-    background-image: url(../../imgs/hero/panda-donate-tab-x1.png);
+    background-image: url(./../../imgs/hero/panda-donate-tab-x1.png);
 
     @include retina {
-      background-image: url(../../imgs/hero/panda-donate-tab-x2.png);
+      background-image: url(./../../imgs/hero/panda-donate-tab-x2.png);
     }
   }
 
   @include small-desktop {
     height: 390px;
 
-    background-image: url(../../imgs/hero/panda-donate-smdesk-x1.png);
+    background-image: url(./../../imgs/hero/panda-donate-smdesk-x1.png);
 
     @include retina {
-      background-image: url(../../imgs/hero/panda-donate-smdesk-x2.png);
+      background-image: url(./../../imgs/hero/panda-donate-smdesk-x2.png);
     }
   }
 
   @include desktop {
-    background-image: url(../../imgs/hero/panda-donate-desk-x1.png);
+    background-image: url(./../../imgs/hero/panda-donate-desk-x1.png);
 
     @include retina {
-      background-image: url(../../imgs/hero/panda-donate-desk-x2.png);
+      background-image: url(./../../imgs/hero/panda-donate-desk-x2.png);
     }
   }
 }
