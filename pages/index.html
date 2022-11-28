@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Donate</title>
-    <link rel="stylesheet" href="./css/main.min.css">
+    <title>Online-zoo</title>
+    <link rel="stylesheet" href="../css/main.min.css">
 </head>
 
 <body>
@@ -24,10 +24,10 @@
             </div>
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="./index.html" class="nav__link link">About</a></li>
+                    <li class="nav__item"><a href="./index.html" class="nav__link link active">About</a></li>
                     <li class="nav__item"> <a href="#" class="nav__link link">Map</a></li>
                     <li class="nav__item"><a href="#" class="nav__link link">Zoos</a></li>
-                    <li class="nav__item"><a href="./donate.html" class="nav__link link active">Donate</a></li>
+                    <li class="nav__item"><a href="./donate.html" class="nav__link link">Donate</a></li>
                     <li class="nav__item"><a href="#" class="nav__link link">Contact us</a></li>
                 </ul>
             </nav>
@@ -37,7 +37,7 @@
             <button type="button" class="mob-menu__open" aria-expanded="false" aria-controls="menu-container"
                 data-menu-open>
                 <svg width="18" height="10" aria-label="switches mobile menu">
-                    <use class="mob-menu__icon" href="./imgs/svg/symbol-defs.svg#icon-menu-open"></use>
+                    <use class="mob-menu__icon" href="../imgs/svg/symbol-defs.svg#icon-menu-open"></use>
                 </svg> </button>
             <!-- MOB-MENU -->
             <div class="mob-menu is-hidden">
@@ -45,7 +45,7 @@
                     <button type="button" class="mob-menu__close" aria-expanded="false" aria-controls="menu-container"
                         data-menu-close="">
                         <svg width="30" height="30" aria-label="switches mobile menu">
-                            <use class="mob-menu__icon" href="./imgs/svg/symbol-defs.svg#icon-menu-close"></use>
+                            <use class="mob-menu__icon" href="../imgs/svg/symbol-defs.svg#icon-menu-close"></use>
                         </svg> </button>
                     <div class="logo mob-menu__logo">
                         <a href="./index.html" class="logo__link mob-menu__logo-link">
@@ -71,10 +71,12 @@
     </header>
     <main>
         <!-- HERO -->
-        <section class="hero--donate">
+        <section class="hero">
             <div class="container">
-                <h2 class="is-hidden">Watch your <span class="hero__title--accent">favorite</span> animal online
+                <span class="circle"></span>
+                <h2 class="hero__title title">Watch your <span class="hero__title--accent">favorite</span> animal online
                 </h2>
+                <a href="#" class="hero__btn btn">Watch online</a>
             </div>
         </section>
     </main>
@@ -102,7 +104,7 @@
                     <a href="https://www.facebook.com/" class="footer__contacts-link" target="_blank"
                         rel="noopener nofollow noreferrer">
                         <svg width="8" height="16">
-                            <use class="footer__icon" href="./imgs/svg/symbol-defs.svg#icon-facebook"></use>
+                            <use class="footer__icon" href="../imgs/svg/symbol-defs.svg#icon-facebook"></use>
                         </svg>
                     </a>
                 </li>
@@ -110,7 +112,7 @@
                     <a href="https://twitter.com/" class="footer__contacts-link" target="_blank"
                         rel="noopener nofollow noreferrer">
                         <svg width="16" height="14">
-                            <use class="footer__icon" href="./imgs/svg/symbol-defs.svg#icon-twitter"></use>
+                            <use class="footer__icon" href="../imgs/svg/symbol-defs.svg#icon-twitter"></use>
                         </svg>
                     </a>
                 </li>
@@ -118,7 +120,7 @@
                     <a href="https://www.instagram.com/" class="footer__contacts-link" target="_blank"
                         rel="noopener nofollow noreferrer">
                         <svg width="16" height="16">
-                            <use class="footer__icon" href="./imgs/svg/symbol-defs.svg#icon-instagram"></use>
+                            <use class="footer__icon" href="../imgs/svg/symbol-defs.svg#icon-instagram"></use>
                         </svg>
                     </a>
                 </li>
@@ -126,7 +128,7 @@
                     <a href="https://www.youtube.com/" class="footer__contacts-link" target="_blank"
                         rel="noopener nofollow noreferrer">
                         <svg width="18" height="13">
-                            <use class="footer__icon" href="./imgs/svg/symbol-defs.svg#icon-youtube"></use>
+                            <use class="footer__icon" href="../imgs/svg/symbol-defs.svg#icon-youtube"></use>
                         </svg>
                     </a>
                 </li>
@@ -138,7 +140,7 @@
                     <p class="designer__desc">©RSSchool & ©Yem Digital 2021</p>
                 </div>
                 <ul class="footer__list">
-                    <li class="footer__item"><a href="./index.html" class="footer__link link">About</a></li>
+                    <li class="footer__item"><a href="./index.html" class="footer__link link active">About</a></li>
                     <li class="footer__item"><a href="#" class="footer__link link">Map</a></li>
                     <li class="footer__item"><a href="#" class="footer__link link">Zoos</a></li>
                     <li class="footer__item"><a href="#" class="footer__link link">Contact us</a></li>
@@ -149,7 +151,7 @@
                             <a href="https://www.facebook.com/" class="footer__socials-link" target="_blank"
                                 rel="noopener nofollow noreferrer">
                                 <svg width="8" height="16">
-                                    <use class="footer__icon" href="./imgs/svg/symbol-defs.svg#icon-facebook"></use>
+                                    <use class="footer__icon" href="../imgs/svg/symbol-defs.svg#icon-facebook"></use>
                                 </svg>
                             </a><span>Facebook</span>
                         </div>
@@ -159,7 +161,7 @@
                             <a href="https://twitter.com/" class="footer__socials-link" target="_blank"
                                 rel="noopener nofollow noreferrer">
                                 <svg width="16" height="14">
-                                    <use class="footer__icon" href="./imgs/svg/symbol-defs.svg#icon-twitter"></use>
+                                    <use class="footer__icon" href="../imgs/svg/symbol-defs.svg#icon-twitter"></use>
                                 </svg>
                             </a><span>Twitter</span>
                         </div>
@@ -169,7 +171,7 @@
                             <a href="https://www.instagram.com/" class="footer__socials-link" target="_blank"
                                 rel="noopener nofollow noreferrer">
                                 <svg width="16" height="16">
-                                    <use class="footer__icon" href="./imgs/svg/symbol-defs.svg#icon-instagram"></use>
+                                    <use class="footer__icon" href="../imgs/svg/symbol-defs.svg#icon-instagram"></use>
                                 </svg>
                             </a><span>Instagram</span>
                         </div>
@@ -179,7 +181,7 @@
                             <a href="https://www.youtube.com/" class="footer__socials-link" target="_blank"
                                 rel="noopener nofollow noreferrer">
                                 <svg width="18" height="13">
-                                    <use class="footer__icon" href="./imgs/svg/symbol-defs.svg#icon-youtube"></use>
+                                    <use class="footer__icon" href="../imgs/svg/symbol-defs.svg#icon-youtube"></use>
                                 </svg>
                             </a><span>Youtube</span>
                         </div>
@@ -188,7 +190,7 @@
             </div>
         </div>
     </footer>
-    <script src="./js/menu.js" type="module"></script>
+    <script src="../js/menu.js" type="module"></script>
 </body>
 
 </html>
