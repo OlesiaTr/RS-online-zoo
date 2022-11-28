@@ -8,8 +8,7 @@
   height: 187px;
   overflow-y: hidden;
 
-  // JUST FOR FOOTER
-  margin-bottom: 100px;
+  margin-bottom: 104px;
 
   & .container {
     @include centeredFlex($jc: flex-end);
@@ -44,6 +43,7 @@
 
   @include tablet {
     height: 339px;
+    margin-bottom: 60px;
     background-position: bottom;
 
     background-image: url(../imgs/hero/panda-main-tab-x1.png);
@@ -65,6 +65,7 @@
 
   @include desktop {
     height: 700px;
+    margin-bottom: 140px;
 
     background-image: url(../imgs/hero/panda-main-desk-x1.png);
 
