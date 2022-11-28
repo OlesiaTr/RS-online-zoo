@@ -5,6 +5,10 @@
     margin-bottom: 80px;
   }
 
+  @include small-desktop {
+    margin-bottom: 142px;
+  }
+
   @include desktop {
     margin-bottom: 180px;
 
@@ -78,7 +82,7 @@
     @media screen and (min-width: 1530px) {
       display: block;
 
-      top: 74%;
+      top: 83%;
     }
   }
 }
