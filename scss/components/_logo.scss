@@ -38,7 +38,7 @@
   }
 
   &::after {
-    content: url(./../../imgs/svg/white-bamboo.svg);
+    content: url(/imgs/svg/white-bamboo.svg);
     position: relative;
 
     width: 5px;
@@ -56,7 +56,7 @@
     }
 
     .mob-menu & {
-      content: url(./../../imgs/svg/orange-bamboo.svg);
+      content: url(/imgs/svg/orange-bamboo.svg);
 
       width: 6px;
       height: 17px;
