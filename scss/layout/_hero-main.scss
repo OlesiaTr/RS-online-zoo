@@ -1,5 +1,5 @@
 .hero {
-  background-image: url(./../../imgs/hero/panda-main-mob-x1.png);
+  background-image: url(../imgs/hero/panda-main-mob-x1.png);
 
   background-repeat: no-repeat;
   background-position: center;
@@ -39,37 +39,37 @@
   }
 
   @include retina {
-    background-image: url(./../../imgs/hero/panda-main-mob-x2.png);
+    background-image: url(../imgs/hero/panda-main-mob-x2.png);
   }
 
   @include tablet {
     height: 339px;
     background-position: bottom;
 
-    background-image: url(./../../imgs/hero/panda-main-tab-x1.png);
+    background-image: url(../imgs/hero/panda-main-tab-x1.png);
 
     @include retina {
-      background-image: url(./../../imgs/hero/panda-main-tab-x2.png);
+      background-image: url(../imgs/hero/panda-main-tab-x2.png);
     }
   }
 
   @include small-desktop {
     height: 504px;
 
-    background-image: url(./../../imgs/hero/panda-main-smdesk-x1.png);
+    background-image: url(../imgs/hero/panda-main-smdesk-x1.png);
 
     @include retina {
-      background-image: url(./../../imgs/hero/panda-main-smdesk-x2.png);
+      background-image: url(../imgs/hero/panda-main-smdesk-x2.png);
     }
   }
 
   @include desktop {
     height: 700px;
 
-    background-image: url(./../../imgs/hero/panda-main-desk-x1.png);
+    background-image: url(../imgs/hero/panda-main-desk-x1.png);
 
     @include retina {
-      background-image: url(./../../imgs/hero/panda-main-desk-x2.png);
+      background-image: url(../imgs/hero/panda-main-desk-x2.png);
     }
   }
 }
