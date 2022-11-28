@@ -1,0 +1,23 @@
+.btn {
+  width: 298px;
+  height: 54px;
+
+  color: var(--bcg-white);
+  background: linear-gradient(113.96deg, var(--orange) 1.49%, #fe9013 101.44%);
+
+  border-radius: 25px;
+  border-color: transparent;
+
+  text-transform: uppercase;
+
+  transition: all var(--time) var(--cubic);
+
+  &:hover,
+  &:focus {
+    background: var(hover-orange);
+  }
+
+  &:active {
+    background: var(--green);
+  }
+}

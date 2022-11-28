@@ -1,0 +1,39 @@
+.circle {
+  content: (" ");
+  border-radius: 50%;
+
+  position: absolute;
+  width: 119px;
+  height: 119px;
+  top: 57px;
+  right: 38px;
+
+  background: linear-gradient(
+    113.96deg,
+    var(--orange) 1.49%,
+    var(--orange) 101.44%
+  );
+
+  @include tablet {
+    position: relative;
+
+    width: 238px;
+    height: 238px;
+    top: -25px;
+    right: -33%;
+  }
+
+  @include small-desktop {
+    width: 367px;
+    height: 367px;
+    top: -30%;
+    right: -41%;
+  }
+
+  @include desktop {
+    width: 465px;
+    height: 465px;
+    top: -31%;
+    right: -34%;
+  }
+}

@@ -14,6 +14,7 @@
   @include tablet {
     width: 640px;
     padding: 3px 20px;
+    margin: 0 auto;
     .mob-menu & {
       padding-right: 15px;
     }

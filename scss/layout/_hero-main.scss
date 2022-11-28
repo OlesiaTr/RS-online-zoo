@@ -1,0 +1,136 @@
+.hero {
+  background-image: url(../../imgs/hero/panda-main-mob-x1.png);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  height: 187px;
+  overflow-y: hidden;
+
+  & .container {
+    @include centeredFlex($jc: flex-end);
+    height: 100%;
+    margin-bottom: 20px;
+
+    @include tablet {
+      padding-left: 20px;
+      padding-right: 15px;
+      margin-bottom: 0;
+    }
+
+    @include small-desktop {
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      padding-right: 86px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    @include desktop {
+      align-content: flex-end;
+
+      padding-right: 20px;
+    }
+  }
+
+  @include retina {
+    background-image: url(../../imgs/hero/panda-main-mob-x2.png);
+  }
+
+  @include tablet {
+    height: 339px;
+    background-position: bottom;
+
+    background-image: url(../../imgs/hero/panda-main-tab-x1.png);
+
+    @include retina {
+      background-image: url(../../imgs/hero/panda-main-tab-x2.png);
+    }
+  }
+
+  @include small-desktop {
+    height: 504px;
+
+    background-image: url(../../imgs/hero/panda-main-smdesk-x1.png);
+
+    @include retina {
+      background-image: url(../../imgs/hero/panda-main-smdesk-x2.png);
+    }
+  }
+
+  @include desktop {
+    height: 700px;
+
+    background-image: url(../../imgs/hero/panda-main-desk-x1.png);
+
+    @include retina {
+      background-image: url(../../imgs/hero/panda-main-desk-x2.png);
+    }
+  }
+}
+
+.hero__title,
+.hero__title--accent {
+  @include font(700, 28px, 75%);
+
+  width: 128px;
+
+  color: var(--bcg-white);
+
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 1;
+
+  @include tablet {
+    @include font(700, 54px, 75%);
+
+    width: 256px;
+
+    margin-bottom: 87px;
+  }
+
+  @include small-desktop {
+    @include font(700, 85px, 75%);
+
+    width: 400px;
+
+    margin-bottom: 40px;
+  }
+
+  @include desktop {
+    @include font(700, 107px, 75%);
+
+    width: 500px;
+
+    margin-bottom: 60px;
+  }
+}
+
+.hero__title--accent {
+  color: var(--yellow);
+}
+
+.hero__btn {
+  position: absolute;
+  transform: translate(0%, 140px);
+
+  width: 95%;
+
+  @include tablet {
+    width: 298px;
+    transform: translate(-103%, 122px);
+    margin-bottom: 40px;
+  }
+
+  @include small-desktop {
+    transform: none;
+    position: relative;
+    margin-bottom: 47px;
+  }
+
+  @include desktop {
+    margin-bottom: 100px;
+  }
+}
