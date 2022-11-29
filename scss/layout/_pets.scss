@@ -79,6 +79,8 @@
 
   @include desktop {
     left: 115px;
+
+    z-index: 1;
   }
 }
 
@@ -90,7 +92,9 @@
   }
 
   @include desktop {
-    right: 10%;
+    right: 117px;
+
+    z-index: 1;
   }
 }
 

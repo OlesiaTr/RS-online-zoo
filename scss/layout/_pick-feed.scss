@@ -163,7 +163,7 @@
   }
 
   @include small-desktop {
-    width: 117%;
+    width: 100%;
     padding: 0 88px;
     display: flex;
     justify-content: space-between;
@@ -241,7 +241,7 @@
     height: 90px;
     z-index: 2;
     margin-bottom: 0;
-    background: no-repeat center/100% url(../../imgs/svg/green-arrow.svg);
+    background: no-repeat center/100% url(../imgs/svg/green-arrow.svg);
 
     right: -35%;
     bottom: -10%;
@@ -255,7 +255,7 @@
   }
 
   @include small-desktop {
-    background: no-repeat center/100% url(../../imgs/arrow-right.png);
+    background: no-repeat center/100% url(../imgs/arrow-right.png);
 
     position: absolute;
 
