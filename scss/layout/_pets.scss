@@ -125,12 +125,13 @@
   @include small-desktop {
     grid-template-columns: repeat(4, 294px);
     column-gap: 30px;
+
+    margin-bottom: 80px;
   }
 
   @include desktop {
     row-gap: calc(30px - 10px);
     grid-template-columns: repeat(4, 366px);
-    margin-bottom: 80px;
 
     width: 1160px;
   }
