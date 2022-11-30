@@ -2369,9 +2369,11 @@ figure {
   border-radius: 5px;
   padding-top: 16px;
   margin: 0 auto;
+  width: 240px;
 }
 @media screen and (min-width: 1000px) {
   .testimonial__btn {
     margin: 0;
+    width: 298px;
   }
 }/*# sourceMappingURL=main.css.map */

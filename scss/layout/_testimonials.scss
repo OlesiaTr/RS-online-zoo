@@ -200,8 +200,10 @@
 
   padding-top: 16px;
   margin: 0 auto;
+  width: 240px;
 
   @include small-desktop {
     margin: 0;
+    width: 298px;
   }
 }
