@@ -6,6 +6,7 @@
   background-size: cover;
 
   height: 187px;
+  margin-bottom: 30px;
 
   @include retina {
     background-image: url(../imgs/hero/panda-donate-mob-x2.png);
@@ -23,6 +24,7 @@
 
   @include small-desktop {
     height: 390px;
+    margin-bottom: 40px;
 
     background-image: url(../imgs/hero/panda-donate-smdesk-x1.png);
 

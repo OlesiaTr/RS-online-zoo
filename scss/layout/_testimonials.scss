@@ -185,6 +185,11 @@
       background: #f9804b;
       cursor: pointer;
     }
+
+    @include desktop {
+      width: 600px;
+      margin-bottom: 31px;
+    }
   }
 }
 
