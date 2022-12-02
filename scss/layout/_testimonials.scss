@@ -95,6 +95,12 @@
     }
   }
 
+  &.backdrop--popup {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    z-index: 10;
+  }
+
   @include tablet {
     padding: 15px 29px 8px 12px;
   }
@@ -156,6 +162,10 @@
 
   max-height: 38px;
   margin-left: 6px;
+
+  .backdrop--popup & {
+    max-height: 310px;
+  }
 
   @include small-desktop {
     margin-left: 0;

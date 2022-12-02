@@ -1,0 +1,18 @@
+.is-open {
+  & .is-open__close {
+    display: none;
+
+    .backdrop--popup & {
+      display: block;
+      margin-left: auto;
+
+      border: none;
+
+      background-color: var(--bcg-white);
+    }
+  }
+
+  & .is-open__icon {
+    fill: var(--orange);
+  }
+}
