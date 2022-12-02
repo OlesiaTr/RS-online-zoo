@@ -847,7 +847,7 @@ figure {
     left: -25px;
   }
 }
-.donate-btm__btn:hover::after {
+.donate-btm__btn:hover::after, .donate-btm__btn.donate-btm__dot--active::after {
   content: "";
   width: 10px;
   height: 10px;
@@ -860,7 +860,7 @@ figure {
   background-color: transparent;
 }
 @media screen and (min-width: 640px) {
-  .donate-btm__btn:hover::after {
+  .donate-btm__btn:hover::after, .donate-btm__btn.donate-btm__dot--active::after {
     width: 40px;
     height: 40px;
     bottom: 50%;
@@ -882,7 +882,7 @@ figure {
     height: 10px;
   }
 }
-.donate-btm__btn:hover .donate-btm__dot::after {
+.donate-btm__btn:hover .donate-btm__dot::after, .donate-btm__dot--active.donate-btm__btn .donate-btm__dot::after {
   content: "";
   width: 20px;
   height: 20px;
@@ -895,7 +895,7 @@ figure {
   background-color: transparent;
 }
 @media screen and (min-width: 640px) {
-  .donate-btm__btn:hover .donate-btm__dot::after {
+  .donate-btm__btn:hover .donate-btm__dot::after, .donate-btm__dot--active.donate-btm__btn .donate-btm__dot::after {
     width: 22px;
     height: 22px;
   }

@@ -267,7 +267,8 @@
     left: -25px;
   }
 
-  &:hover::after {
+  &:hover::after,
+  &.donate-btm__dot--active::after {
     content: "";
     width: 10px;
     height: 10px;
@@ -306,7 +307,8 @@
     height: 10px;
   }
 
-  .donate-btm__btn:hover &::after {
+  .donate-btm__btn:hover &::after,
+  .donate-btm__dot--active.donate-btm__btn &::after {
     content: "";
     width: 20px;
     height: 20px;
