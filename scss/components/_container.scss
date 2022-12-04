@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+  padding: 3px 10px;
+
+  @include mobile {
+    .mob-menu & {
+      padding-top: 1px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      padding-right: 4px;
+    }
+  }
+
+  @include tablet {
+    // width: 640px;
+    padding: 3px 20px;
+    margin: 0 auto;
+    .mob-menu & {
+      padding-right: 15px;
+    }
+  }
+
+  @include small-desktop {
+    // width: 1000px;
+    padding: 14px 30px;
+  }
+
+  @include desktop {
+    width: 1200px;
+    padding: 14px 20px;
+  }
+}

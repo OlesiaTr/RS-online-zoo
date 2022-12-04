@@ -1,0 +1,280 @@
+.pets {
+  padding-bottom: 60px;
+  overflow: hidden;
+  position: relative;
+
+  @include tablet {
+    padding-bottom: 100px;
+  }
+
+  @include small-desktop {
+    padding-bottom: 140px;
+  }
+
+  @include desktop {
+    padding-bottom: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  & .container {
+    width: 100%;
+
+    padding: 0 17px;
+    margin: 0 auto;
+
+    @include tablet {
+      max-width: 950px;
+    }
+
+    @include small-desktop {
+      max-width: 1003px;
+      padding: 0 30px;
+    }
+
+    @include desktop {
+      margin-bottom: 80px;
+      padding: 0 20px;
+
+      max-width: 1200px;
+    }
+  }
+}
+
+.arrow {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.arrow__btn {
+  position: absolute;
+  bottom: 58%;
+
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+
+  @include small-desktop {
+    bottom: 59.5%;
+  }
+
+  @include desktop {
+    bottom: 61%;
+  }
+}
+
+.arrow__btn--left {
+  left: 37%;
+
+  @include small-desktop {
+    left: 35%;
+  }
+
+  @include desktop {
+    left: 115px;
+
+    z-index: 1;
+  }
+}
+
+.arrow__btn--right {
+  right: 38%;
+
+  @include small-desktop {
+    right: 35%;
+  }
+
+  @include desktop {
+    right: 117px;
+
+    z-index: 1;
+  }
+}
+
+.arrow__btn--icon {
+  fill: white;
+}
+
+.pets__list {
+  overflow-x: hidden;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+
+  row-gap: 20px;
+
+  margin-bottom: 20px;
+
+  @include tablet {
+    grid-template-columns: repeat(4, 285px);
+
+    column-gap: 30px;
+    row-gap: 92px;
+
+    margin-bottom: 60px;
+  }
+
+  @include small-desktop {
+    grid-template-columns: repeat(4, 294px);
+    column-gap: 30px;
+
+    margin-bottom: 86px;
+  }
+
+  @include desktop {
+    row-gap: calc(30px - 10px);
+    grid-template-columns: repeat(4, 366px);
+
+    width: 1160px;
+  }
+}
+
+.pets__item {
+  border: 1px solid #fe9013;
+  border-radius: 5px;
+  width: 100%;
+
+  &:nth-child(n + 5) {
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
+  }
+
+  &:hover .pets__desc--hov {
+    transform: translateY(-50%);
+    color: var(--bcg-white);
+  }
+
+  &:hover .pets__desc--hov .pets__title {
+    color: var(--bcg-white);
+  }
+
+  @include desktop {
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+.pets__wrap--top {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.pets__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+
+  object-fit: contain;
+  transition: transform 400ms ease-out;
+  transition: 0.5s;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.027);
+    filter: brightness(0.5);
+  }
+}
+
+.pets__desc--hov {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 50% 16px;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+  transform: translateY(100%);
+}
+
+.pets__title {
+  @include font(500, 12px, 1.4);
+
+  text-transform: uppercase;
+  color: #000000;
+
+  @include desktop {
+    @include font(500, 16px, 1.4);
+  }
+}
+
+.pets__text {
+  @include font(300, 12px, 1.2);
+}
+
+.pets__wrap--bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: #000000;
+  padding: 6px 11px 13px;
+
+  @include desktop {
+    padding: 8px 14px 14px;
+  }
+}
+
+.vegetables {
+  background: no-repeat center/100% url(../imgs/svg/banana-bamboo.svg);
+  width: 26px;
+
+  @include small-desktop {
+    width: 33px;
+  }
+}
+
+.meats {
+  background: no-repeat center/100% url(../imgs/svg/meet-fish.svg);
+  width: 37px;
+
+  @include small-desktop {
+    width: 48px;
+  }
+}
+
+.pets__icon {
+  height: 30px;
+
+  @include small-desktop {
+    height: 38px;
+  }
+}
+
+.pets__btn {
+  display: block;
+
+  padding-top: 16px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.pets__flowers {
+  position: absolute;
+  bottom: 0px;
+}
+
+.decor-left {
+  @include desktop {
+    left: 0px;
+  }
+}
+
+.decor-right {
+  right: 0px;
+}

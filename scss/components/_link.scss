@@ -1,0 +1,11 @@
+.link {
+  @include font(500, 16px, 1.4);
+  color: var(--bcg-white);
+  transition: all var(--time) var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--orange);
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,56 @@
+.header {
+  background-color: var(--bcg-black);
+  @include centeredFlex($ai: null);
+
+  & .container {
+    @media screen and (max-width: 1200px) {
+      @include centeredFlex($jc: null);
+    }
+
+    @include desktop {
+      @include centeredFlex($jc: null);
+    }
+  }
+}
+
+.header--sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+
+  @include small-desktop {
+    position: static;
+  }
+}
+
+.nav {
+  margin-left: 63px;
+  display: none;
+
+  @include small-desktop {
+    display: block;
+  }
+}
+
+.nav__list {
+  display: flex;
+  gap: 48px;
+
+  @include desktop {
+    gap: 58px;
+  }
+}
+
+.active {
+  color: var(--orange);
+}
+
+.designer-link {
+  margin-left: auto;
+  display: none;
+
+  @include small-desktop {
+    display: block;
+  }
+}

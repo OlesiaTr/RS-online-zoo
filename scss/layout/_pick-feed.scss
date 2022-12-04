@@ -1,0 +1,278 @@
+.pick {
+  background: var(--gradient-orange);
+  padding: 20px 0;
+
+  @include small-desktop {
+    padding: 30px 0 50px;
+  }
+
+  @include desktop {
+    padding: 69px 0 100px;
+  }
+
+  & .container {
+    background: var(--white);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px 0 40px;
+    margin: 0 auto;
+
+    width: 320px;
+
+    @include tablet {
+      padding: 10px 20px 60px;
+
+      width: 100%;
+    }
+
+    @include small-desktop {
+      justify-content: center;
+
+      padding: 30px 48px 50px 48px;
+    }
+
+    @include desktop {
+      padding: 40px 100px 60px 100px;
+
+      width: 1200px;
+    }
+  }
+}
+
+.pick__content {
+  margin-bottom: 20px;
+
+  @include tablet {
+    margin-bottom: 30px;
+  }
+
+  @include small-desktop {
+    margin-bottom: 40px;
+  }
+
+  @include desktop {
+    margin-bottom: 60px;
+  }
+}
+
+.pick__title {
+  @include font(400, 24px, 1.2);
+
+  text-align: center;
+  color: var(--orange);
+
+  margin-bottom: 10px;
+
+  @include tablet {
+    @include font(400, 42px, 1.2);
+
+    margin-bottom: 20px;
+  }
+
+  @include small-desktop {
+    @include font(400, 48px, 1.2);
+  }
+
+  @include desktop {
+    margin-bottom: 30px;
+  }
+}
+
+.pick__desc--big {
+  @include font(400, 18px, 1.2);
+
+  @include tablet {
+    @include font(400, 22px, 1.2);
+
+    margin-bottom: 20px;
+  }
+
+  @include small-desktop {
+    @include font(400, 24px, 1.2);
+  }
+
+  @include desktop {
+    margin-bottom: 40px;
+  }
+}
+
+.pick__desc--bold {
+  display: none;
+  @include tablet {
+    @include font(500, 16px, 1.3);
+
+    display: block;
+
+    margin-bottom: 10px;
+  }
+}
+
+.pick__desc {
+  display: none;
+  @include tablet {
+    @include font(400, 16px, 1.3);
+
+    display: block;
+  }
+}
+
+.pick__link {
+  color: inherit;
+  padding-bottom: 1px;
+
+  border-bottom: 1px solid var(--orange);
+}
+
+.pick-demo {
+  @include tablet {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.pick-demo__title {
+  @include font(400, 24px, 1.2);
+
+  margin-bottom: 20px;
+
+  text-align: center;
+
+  @include tablet {
+    @include font(400, 36px, 1.3);
+
+    margin-bottom: 20px;
+  }
+
+  @include small-desktop {
+    margin-bottom: 40px;
+  }
+}
+
+.pick-demo__list {
+  margin-bottom: 30px;
+
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 51px;
+  }
+
+  @include small-desktop {
+    width: 100%;
+    padding: 0 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 85px;
+  }
+
+  @include desktop {
+    width: 108%;
+
+    padding: 0 99px;
+    margin-bottom: 60px;
+  }
+}
+
+.pick-demo__item {
+  position: relative;
+
+  width: 168px;
+  height: 231px;
+
+  margin: 0 auto;
+
+  & + & {
+    margin-top: 20px;
+
+    @include tablet {
+      margin: 0;
+    }
+  }
+
+  @include tablet {
+    margin: 0;
+
+    & + & {
+      margin-left: 42px;
+    }
+  }
+}
+
+.pick-demo__container {
+  @include small-desktop {
+    align-self: flex-start;
+  }
+}
+
+.pick-demo__img {
+  width: 168px;
+  height: 168px;
+  object-fit: contain;
+  padding: 30px;
+  background: var(--white);
+  border-radius: 5px;
+  border: 1px solid var(--orange);
+
+  margin: 0 auto;
+  margin-bottom: 10px;
+
+  @include tablet {
+    margin-bottom: 30px;
+  }
+}
+
+.pick-demo__desc {
+  @include font(400, 16px, 1.4);
+
+  max-width: 168px;
+}
+
+.arrow-right {
+  @media screen and (max-width: 1000px) {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    z-index: 2;
+    margin-bottom: 0;
+    background: no-repeat center/100% url(../imgs/svg/green-arrow.svg);
+
+    right: -35%;
+    bottom: -10%;
+    transform: rotate(90deg);
+
+    @include tablet {
+      right: -30%;
+      top: -20%;
+      transform: rotate(359deg);
+    }
+  }
+
+  @include small-desktop {
+    background: no-repeat center/100% url(../imgs/arrow-right.png);
+
+    position: absolute;
+
+    right: -55%;
+    top: 27%;
+
+    width: 69px;
+    height: 35px;
+
+    margin-bottom: 100px;
+  }
+
+  @include desktop {
+    margin-bottom: 100px;
+  }
+}
+
+.pick__btn {
+  border: none;
+}
