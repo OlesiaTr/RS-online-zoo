@@ -2,14 +2,6 @@
   background-color: var(--bcg-black);
   @include centeredFlex($ai: null);
 
-  position: fixed;
-  width: 100%;
-  z-index: 9;
-
-  @include small-desktop {
-    position: static;
-  }
-
   & .container {
     @media screen and (max-width: 1200px) {
       @include centeredFlex($jc: null);
@@ -18,6 +10,16 @@
     @include desktop {
       @include centeredFlex($jc: null);
     }
+  }
+}
+
+.header--sticky {
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+
+  @include small-desktop {
+    position: static;
   }
 }
 

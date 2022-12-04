@@ -1355,14 +1355,6 @@ figure {
   background-color: var(--bcg-black);
   display: flex;
   justify-content: center;
-  position: fixed;
-  width: 100%;
-  z-index: 9;
-}
-@media screen and (min-width: 1000px) {
-  .header {
-    position: static;
-  }
 }
 @media screen and (max-width: 1200px) {
   .header .container {
@@ -1374,6 +1366,17 @@ figure {
   .header .container {
     display: flex;
     align-items: center;
+  }
+}
+
+.header--sticky {
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+}
+@media screen and (min-width: 1000px) {
+  .header--sticky {
+    position: static;
   }
 }
 
