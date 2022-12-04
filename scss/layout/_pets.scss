@@ -62,7 +62,7 @@
   background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
 
   @include small-desktop {
-    bottom: 59%;
+    bottom: 59.5%;
   }
 
   @include desktop {
@@ -74,7 +74,7 @@
   left: 37%;
 
   @include small-desktop {
-    left: 36%;
+    left: 35%;
   }
 
   @include desktop {
@@ -88,7 +88,7 @@
   right: 38%;
 
   @include small-desktop {
-    right: 36%;
+    right: 35%;
   }
 
   @include desktop {
@@ -126,7 +126,7 @@
     grid-template-columns: repeat(4, 294px);
     column-gap: 30px;
 
-    margin-bottom: 80px;
+    margin-bottom: 86px;
   }
 
   @include desktop {

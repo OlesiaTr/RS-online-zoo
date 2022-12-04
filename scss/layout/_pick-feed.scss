@@ -159,7 +159,7 @@
   @include tablet {
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 51px;
   }
 
   @include small-desktop {
@@ -169,7 +169,7 @@
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    margin-bottom: 70px;
+    margin-bottom: 85px;
   }
 
   @include desktop {
@@ -248,7 +248,7 @@
     transform: rotate(90deg);
 
     @include tablet {
-      right: -35%;
+      right: -30%;
       top: -20%;
       transform: rotate(359deg);
     }
@@ -259,8 +259,8 @@
 
     position: absolute;
 
-    right: -75%;
-    top: 35%;
+    right: -55%;
+    top: 27%;
 
     width: 69px;
     height: 35px;

@@ -224,7 +224,7 @@ figure {
     position: relative;
     width: 238px;
     height: 238px;
-    top: -25px;
+    top: -41px;
     right: -33%;
   }
 }
@@ -446,6 +446,7 @@ figure {
   .subscribe__form {
     display: flex;
     flex-direction: column;
+    padding-right: 32px;
   }
 }
 
@@ -509,7 +510,7 @@ figure {
 }
 @media screen and (min-width: 1000px) {
   .backstage {
-    margin-bottom: 142px;
+    margin-bottom: 149px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -577,7 +578,7 @@ figure {
 }
 @media screen and (min-width: 640px) {
   .backstage__img--bcg {
-    top: 59%;
+    top: 58%;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -1180,7 +1181,7 @@ figure {
   .footer__contacts-list {
     flex-direction: column;
     position: absolute;
-    transform: translate(87vw, 1%);
+    transform: translate(90vw, -2%);
     gap: 20px;
     margin-bottom: 0;
   }
@@ -1371,6 +1372,7 @@ figure {
 
 .header--sticky {
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 9;
 }
@@ -1518,6 +1520,15 @@ figure {
   }
 }
 
+.hero__fixed-header {
+  margin-top: 35px;
+}
+@media screen and (min-width: 1000px) {
+  .hero__fixed-header {
+    margin-top: 0;
+  }
+}
+
 .hero {
   background-image: url(../imgs/hero/panda-main-mob-x1.png);
   background-repeat: no-repeat;
@@ -1545,7 +1556,7 @@ figure {
   .hero .container {
     flex-direction: column;
     flex-wrap: wrap;
-    padding-right: 86px;
+    padding-right: 46px;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -1554,6 +1565,14 @@ figure {
   .hero .container {
     align-content: flex-end;
     padding-right: 20px;
+  }
+}
+.hero .hero__fixed-header {
+  margin-top: 35px;
+}
+@media screen and (min-width: 1000px) {
+  .hero .hero__fixed-header {
+    margin-top: 0;
   }
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -1617,7 +1636,7 @@ figure {
     font-size: 54px;
     line-height: 75%;
     width: 256px;
-    margin-bottom: 87px;
+    margin-bottom: 44px;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -1739,7 +1758,7 @@ figure {
 }
 @media screen and (min-width: 1000px) {
   .arrow__btn {
-    bottom: 59%;
+    bottom: 59.5%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1753,7 +1772,7 @@ figure {
 }
 @media screen and (min-width: 1000px) {
   .arrow__btn--left {
-    left: 36%;
+    left: 35%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1768,7 +1787,7 @@ figure {
 }
 @media screen and (min-width: 1000px) {
   .arrow__btn--right {
-    right: 36%;
+    right: 35%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1802,7 +1821,7 @@ figure {
   .pets__list {
     grid-template-columns: repeat(4, 294px);
     column-gap: 30px;
-    margin-bottom: 80px;
+    margin-bottom: 86px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2143,7 +2162,7 @@ figure {
   .pick-demo__list {
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 51px;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -2154,7 +2173,7 @@ figure {
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    margin-bottom: 70px;
+    margin-bottom: 85px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2233,7 +2252,7 @@ figure {
 }
 @media screen and (max-width: 1000px) and (min-width: 640px) {
   .arrow-right {
-    right: -35%;
+    right: -30%;
     top: -20%;
     transform: rotate(359deg);
   }
@@ -2242,8 +2261,8 @@ figure {
   .arrow-right {
     background: no-repeat center/100% url(../imgs/arrow-right.png);
     position: absolute;
-    right: -75%;
-    top: 35%;
+    right: -55%;
+    top: 27%;
     width: 69px;
     height: 35px;
     margin-bottom: 100px;
@@ -2321,6 +2340,7 @@ figure {
 @media screen and (min-width: 1000px) {
   .testimonial__title {
     color: var(--dark-blue);
+    margin-bottom: 21px;
   }
 }
 

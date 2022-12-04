@@ -41,3 +41,10 @@
     }
   }
 }
+
+.hero__fixed-header {
+  margin-top: 35px;
+  @include small-desktop {
+    margin-top: 0;
+  }
+}
