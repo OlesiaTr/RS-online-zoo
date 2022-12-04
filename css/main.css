@@ -113,6 +113,46 @@ figure {
   margin: 0;
 }
 
+.from-left {
+  animation: moveToLeft 1000ms ease-in-out;
+  animation-direction: reverse;
+}
+
+.to-right {
+  animation: moveToRight 1000ms ease-in-out;
+  animation-direction: reverse;
+}
+
+@-webkit-keyframes moveToLeft {
+  to {
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0.3;
+    -webkit-transform: translateX(-50%);
+  }
+}
+@keyframes moveToLeft {
+  to {
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0.3;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+@-webkit-keyframes moveToRight {
+  to {
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0.3;
+    -webkit-transform: translateX(50%);
+  }
+}
+@keyframes moveToRight {
+  to {
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0.3;
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
